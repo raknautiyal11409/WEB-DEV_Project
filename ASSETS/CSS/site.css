@@ -1,0 +1,937 @@
+html {
+	scroll-behavior: smooth;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin:0;
+	padding: 0;
+	background-color: #F8F7F5 ;
+}
+
+p{
+	color:red;
+}
+
+/*Navigation Bar Styling*/
+.nav_logo {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+/*Navigation Bar Title left Styling*/
+h2{
+	font-size: 1.5rem;
+	margin: 0.5rem;
+	padding-left: 20px;
+}
+
+/*Navigation Bar Links Styling*/
+.main_nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.main_nav li{
+	list-style: none;
+	transition-duration: 0.4s;
+}
+
+.main_nav li a {
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+	display: block;
+}
+
+.main_nav li:hover {
+	background-color: #555;
+}
+
+/*Drop down menu Styling*/
+.drop_menu {
+	position: absolute;
+	top: .75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+/*Drop down menu triple line Styling*/
+.drop_menu .line {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+/*Home image  Styling*/
+#homeImage{
+	background-image: url(../Images/home.jpg);
+	border: none;
+	width: 100%;
+	height: 855px;
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	margin: auto;
+  	border-bottom-right-radius: 10px;
+  	border-bottom-left-radius: 10px;
+}
+
+/*Explore Button Styling*/
+#homeTag, .homeTag{
+	border:2px white solid;
+	color: white;
+	width: 20vw;
+	height: 4vw;
+	margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5vw;
+    font-family: monospace;
+    transition-duration: 0.4s;
+}
+
+#homeTag a, .homeTag a{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size:2.5vw;
+    color: white;
+}
+
+#homeTag a:link, .homeTag a:link{
+	text-decoration: none;
+}
+
+/*Fdae in when hover*/
+#homeTag a:hover, .homeTag a:hover{
+	color: white;
+}
+
+#homeTag:hover, .homeTag:hover{
+	border:2px black solid;
+	background-color: black;
+	color: black;
+	width: 20vw;
+	height: 4vw;
+	margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5vw;
+    font-family: monospace;
+}
+
+#homebottom {
+	border: none;
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+/*Alert button styling*/
+#alert_button{
+  	color: red;
+  	border-radius:50%;
+  	cursor: pointer;
+  	width: 4vw;
+  	height: 4vw;
+  	text-align: center;
+  	transform: translate(47vw, 420px);
+  	border: 2px solid #ff4d4d;
+  	background-color: rgba(255,0,0,0.5);
+}
+
+#alert_button img{
+	height: 1.5vw;
+	width: 1vw;
+}
+
+/*Explore Section Background Styling for containers*/
+#homebottom .containers{
+	border:none;
+	height:402px;
+	width: 95%;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Each home navigation button styling*/
+#homebottom .containers a{
+	border:none;
+	width: 20vw;
+	height: 90%;
+	display: inline-block;
+	margin-right: 1vw;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*Explore Section Discover Button Styling*/
+.containers .container1{
+	background-image: url(../Images/disc1.jpg);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	margin: auto;
+  	margin-left: 5vw;
+}
+
+/*Explore Section Gallery Button Styling*/
+.containers .container2{
+	background-image: url(../Images/gallery.jpg);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	margin: auto;
+}
+
+/*Explore Section Events Button Styling*/
+.containers .container3{
+	background-image: url(../Images/event.jpg);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	margin: auto;
+}
+
+/*Explore Section Conatct Button Styling*/
+.containers .container4{
+	background-image: url(../Images/contact.jpg);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	margin: auto;
+}
+
+/*Styling title of each container*/
+.title_main {
+	font-size: 1.5vw;
+	border:2px white solid;
+	background-color: white;
+	width: 16vw;
+	margin-left: 2vw;
+	border-radius: 30px;
+	text-decoration: none;
+	display: block;
+}
+
+/*Home video section styling */
+#vid_sec{
+	width: 100%;
+	height: 27.8vw;
+}
+
+/*Video box*/
+#vid_sec video{
+	width: 50%;
+	height: 27.8vw;
+}
+
+/*Footer section Styling*/
+#footnav {
+	background-color: black;
+	width: 100%;
+	height: 370px;
+	display: inline-flex;
+}
+
+#footnav ol{
+	display: inline-block;
+}
+
+/*Left Footer Styling*/
+#footleft{
+	list-style-type: none;
+	padding-left: 5vw;
+	margin-top: inherit;
+}
+
+#footleft li{
+	padding-bottom: 0.5vw;
+	padding-top: none;
+}
+
+#footleft li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1vw;
+	margin-left: 1vw;
+}
+
+#footleft li h4{
+	color: white;
+	padding-top: 2vw;
+	font-size: 2vw;
+}
+
+/*Follow Links Styling*/
+#footmid{
+	list-style-type: none;
+	padding-left: 15vw;
+	text-align: center;
+}
+
+#footmid li{
+	padding-bottom: 0.5vw;
+	padding-top: none;
+}
+
+#footmid li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1vw;
+	margin-left: 1vw;
+	display: table;
+}
+
+#footmid li h4{
+	color: white;
+	padding-top: 2vw;
+	font-size: 3vw;
+	text-align: center;
+}
+
+.line{
+	display: inline-block;
+}
+
+/*Image styling*/
+#twitter{
+	width: 2vw;
+	height: 2vw;
+	transform: translate(250%,-100%);
+
+}
+
+/*Image styling*/
+#insta{
+	width: 3vw;
+	height: 3vw;
+	transform: translate(160%,-50%);
+}
+
+/*Image styling*/
+#facebook{
+	width: 3vw;
+	height: 3vw;
+	transform: translate(130%,-50%);
+}
+
+/*Image styling*/
+#youtube{
+	width: 3vw;
+	height: 3vw;
+	transform: translate(160%,-50%);
+}
+
+/*Right Footer Styling*/
+#footright{
+	list-style-type: none;
+	padding-left: 15vw;
+}
+
+#footright li{
+	margin-left: 1vw;
+	padding-bottom: 0.5vw;
+	padding-top: none;
+}
+
+#footright li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1vw;
+	margin-left: 1vw;
+}
+
+#footright li h4{
+	color: white;
+	font-size: 2vw;
+	padding-top: 2vw;
+}
+
+#weather{
+	width: 49vw;
+	height: 27.8vw;
+}
+
+/*----------------Contact page styling Styling---------------*/
+#contact_home{
+	border: none;
+	width: 100%;
+	height: 855px;
+	display: inline-flex;
+}
+
+/*Left home image styling*/
+#pic1{
+
+	background-image: url(../Images/con1.jpg);
+	width: 50%;
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	border-bottom-left-radius: 10px;
+  	border-right: white 2px solid;
+}
+
+/*Right home image styling*/
+#pic2{
+
+	background-image: url(../Images/rate1.jpg);
+	width: 50%;
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	border-bottom-right-radius: 10px;
+  }
+
+/*Conatct Title Styling*/
+#homebottom h2{
+	text-align: center;
+	font-size: 3.5vw;
+	font-family: monospace;
+}
+
+/*Contact containers Styling*/
+#homebottom .contact_container{
+	height:402px;
+	width: 95%;
+	margin: 0;
+    position: initial;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+}
+
+/*Contact contents styling*/
+#homebottom .contact_container ol{
+	border:3px solid black;
+	width: 37vw;
+	height: 90%;
+	display: inline-block;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+}
+
+/*Dublin Contact styling*/
+.contact_container .container1{
+	background-color: #ff9966;
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	margin-left: 10%;
+  	margin-right: 6vw;
+}
+
+/*Coleraine Contact styling*/
+.contact_container .container2{
+	background-color: #ff6666;
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	margin: auto;
+}
+
+.contact_container .container1 li h4, .contact_container .container2 li h4{
+	font-size: 2.5vw;
+}
+
+.contact_container li{
+	padding-right: 2vw;
+	font-size: 2vw;
+}
+
+/*Review form Styling*/
+#form_container{
+	background-color: #ffce99;
+	border-radius: 5px;
+	padding: 2vw 4vw 2vw 4vw;
+	margin-top: 2vw;
+	padding-bottom: 3vw;
+}
+
+#form_container h1{
+	text-align: center;
+	font-size: 3.5vw;
+	font-family: monospace;
+}
+
+/*Text box styling*/
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+/*Submit button styling*/
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 1vw 1vw;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+/*Radio buttons styling*/
+#radio_box{
+	margin-bottom: 1vw;
+}
+
+#radio_box p{
+	color: black;
+}
+
+#check_box p{
+	color: black;
+}
+
+/*----------------Discover page styling Styling---------------*/
+/*Conatiner styling for each tourist destination and events*/
+#tile, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9, #tile10, #tile11, #tile12, #tile13, #tile14{
+	height: 28vw;
+	width:100%;
+	background-color: white;
+	display: inline-block;
+	padding: 2vw;
+  	display: inline-flex;
+}
+
+/*Conatiner styling for each tourist destination  and events (left)*/
+#tile .block, #tile3 .block, #tile5 .block, #tile7 .block, #tile9 .block, #tile11 .block, #tile13 .block{
+	padding-left: 11vw;
+	padding-right: 2vw;
+}
+
+/*Conatiner styling for each tourist destination and events (Right)*/
+#tile2 .block_bottom, #tile4 .block_bottom, #tile6 .block_bottom, #tile8 .block_bottom, #tile10 .block_bottom, #tile12 .block_bottom, #tile14 .block_bottom{
+	padding-left: 2vw;
+	padding-right: 11vw;
+}
+
+/*image container styling for each tourist destination*/
+.circle {
+	height: 25vw;
+	width: 25vw;
+	border:4px solid lightgrey;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/*text conatiner styling for each tourist destination (left)*/
+.block{
+	width: 70vw;
+	height: 15vw;
+	background-color: black;
+	margin-top: 5vw;
+	transform: translate(-15%, 0);
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+
+/*text conatiner styling for each tourist destination (left)*/
+.block_bottom{
+	width: 70vw;
+	height: 15vw;
+	background-color: black;
+	margin-top: 5vw;
+	transform: translate(15%, 0);
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+
+/*image styling for each tourist destination*/
+.circle{
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+
+#tile .circle{
+	background-image: url(../Images/cliffs.jpg);
+}
+
+#tile2 .circle{
+	background-image: url(../Images/grafton.jpg);
+}
+
+#tile3 .circle{
+	background-image: url(../Images/killarney.jpg);
+}
+
+#tile4 .circle{
+	background-image: url(../Images/trintiy.jpg);
+}
+
+#tile5 .circle{
+	background-image: url(../Images/kilmainham.jpg);
+}
+
+#tile6 .circle{
+	background-image: url(../Images/ring.jpg);
+}
+
+#tile7 .circle{
+	background-image: url(../Images/glendalough.jpg);
+}
+
+#tile8 .circle{
+	background-image: url(../Images/powerscourt.jpg);
+}
+
+#tile9 .circle{
+	background-image: url(../Images/cashel.jpg);
+}
+
+#tile10 .circle{
+	background-image: url(../Images/blarney.jpg);
+}
+
+#tile11 .circle{
+	background-image: url(../Images/kinsale.jpg);
+}
+
+#tile12 .circle{
+	background-image: url(../Images/dingle.jpg);
+}
+
+#tile13 .circle{
+	background-image: url(../Images/aran.jpg);
+}
+
+#tile14 .circle{
+	background-image: url(../Images/cliffs.jpg);
+}
+
+
+/*text styling for each tourist destination*/
+.block, .block_bottom{
+	text-align: center;
+}
+
+.block, .block p, .block_bottom, .block_bottom p{
+	color: white;
+}
+
+.block h2, .block_bottom h2{
+	font-size: 3vw;
+}
+
+.block p, .block_bottom p{
+	font-size: 1.2vw;
+}
+
+/*----------------Event page styling Styling---------------*/
+/*image conatiner styling for each events (left)*/
+.square {
+  	height: 25vw;
+	width: 25vw;
+	border:4px solid #ff884d;
+	border-radius: 10%;
+	z-index: 1;
+}
+
+/*flipcard styling for each events (left)*/
+.flip-card {
+  	background-color: transparent;
+  	width: 100%;
+  	height: 15vw;
+}
+
+.card_inner {
+  	position: relative;
+  	width: 100%;
+  	height: 15vw;
+  	text-align: center;
+  	transition: transform 0.6s;
+  	transform-style: preserve-3d;
+}
+
+.flip-card:hover .card_inner {
+  	transform: rotateX(180deg);
+	transition-duration: 1.5s;
+}
+
+.front, .back {
+  	position: absolute;
+  	width: 100%;
+  	height: 15vw;
+  	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+}
+
+.front {
+  	background-color: black;
+  	color: white;
+}
+
+.back {
+  	background-color: black;
+  	color: white;
+  	transform: rotateX(180deg);
+}
+
+.front h1{
+	font-size: 2.5vw;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.front h3{
+	font-size: 1.5vw;
+	font-family: "Courier New", Courier, monospace;
+	color: #ff884d;
+}
+
+.front h4{
+	font-size: 1vw;
+	margin-top: none;
+	font-family: "Lucida Console", Courier, monospace;
+}
+
+/*image styling for each event*/
+.square{
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+
+/*assigning background image to each event*/
+#tile .square{
+	background-image: url(../Images/fleadh.jpg);
+}
+
+#tile2 .square{
+	background-image: url(../Images/electric.jpg);
+}
+
+#tile3 .square{
+	background-image: url(../Images/body.jpg);
+}
+
+#tile4 .square{
+	background-image: url(../Images/longitude.jpg);
+}
+
+#tile5 .square{
+	background-image: url(../Images/open.jpg);
+}
+
+#tile6 .square{
+	background-image: url(../Images/together.jpg);
+}
+
+#tile7 .square{
+	background-image: url(../Images/sea.jpg);
+}
+
+#tile8 .square{
+	background-image: url(../Images/vantastival.jpg);
+}
+
+#tile9 .square{
+	background-image: url(../Images/galway.jpg);
+}
+
+#tile10 .square{
+	background-image: url(../Images/castlepo.jpg);
+}
+
+.front hr{
+	text-align: center;
+	width: 8vw;
+	padding-bottom: none;
+	border-top: 1px solid grey;
+}
+
+.square h2{
+	display: none;
+}
+
+.circle h2{
+	display: none;
+}
+
+.back article h2{
+	display: none;
+}
+
+/*____________________________Gallery Page styling_______________________________________________________________________________________*/
+/*Gallery title styling */
+#gallery_title{
+	text-align: center;
+	font-family: "Lucida Console", Courier, monospace;
+	font-size: 3vw;
+}
+
+/*Gallery title and phots divide line*/
+#divide_line{
+	border-top: 3px solid black;
+	width: 15vw;
+	margin-bottom: 2vw;
+	margin-top: 4vw;
+}
+
+/*Gallery image grid styling*/
+.image_grid{
+	display: inline-block;
+	width: 100vw;
+}
+
+/*Gallery image container styling */
+.image_grid img{
+	width: 22.2vw;
+	height: 10vw;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.img-thumbnail{
+  	border-radius: 10px;
+  	cursor: pointer;
+  	transition: 0.3s;
+  	margin-left: 2vw;
+  	margin-top: 2vw;
+}
+
+.img-thumbnail:hover {
+	opacity: 0.7;
+}
+
+/* The Gallery viewer (background) */
+.gallery {
+	width: 100%; 
+  	height: 100%; 
+  	overflow: auto; 
+  	left: 0;
+  	display: none; 
+  	position: fixed; 
+  	z-index: 1;
+  	background-color: rgb(0,0,0); 
+  	background-color: rgba(0,0,0,0.9);  
+  	padding-top: 100px; 
+  	top: 0;
+}
+
+/* Gallery (Image) */
+.gallery-content {
+	width: 80%;
+  	max-width: 700px;
+  	border-radius: 20px;
+  	margin: auto;
+  	display: block;
+}
+
+/* Caption of Gallery Image (Image Text) - Same Width as the Image */
+#caption {
+  	margin: auto;
+  	display: block;
+  	max-width: 700px;
+  	text-align: center;
+  	color: #ccc;
+  	padding: 10px 0;
+  	height: 150px;
+  	font-family: "Arial Black", Gadget, sans-serif;
+  	width: 80%;
+}
+
+/* Add Animation - Zoom in the gallery viewer */
+.gallery-content, #caption {
+  	animation-name: zoom;
+  	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  	from {transform:scale(0)}
+  	to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  	position: absolute;
+  	top: 15px;
+  	right: 35px;
+  	color: #f1f1f1;
+  	font-size: 40px;
+  	font-weight: bold;
+  	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  	color: #bbb;
+  	text-decoration: none;
+  	cursor: pointer;
+}
+
+/*Responsive nav bar Styling for the nav bar*/
+@media (max-width: 720px){
+	.drop_menu {
+		display: flex;
+	}
+
+	.main_nav{
+		display: none;
+		width: 100%;
+	}
+
+	.navbar{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.main_nav ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.main_nav ul li{
+		text-align: center;
+	}
+
+	.main_nav ul li a{
+		padding: 0.5rem 1rem;
+	}
+
+	.main_nav.active {
+		display: flex;
+	}
+}
+
+
+/* gallery photo vwier Width adjustment */
+@media only screen and (max-width: 700px){
+  	.gallery-content {
+    	width: 100%;
+  }
+}

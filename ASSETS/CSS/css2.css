@@ -1,0 +1,263 @@
+body{
+	background-color: black; 
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: darkgrey;
+}
+
+.nav_logo {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+}
+
+.main_nav {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.main_nav li {
+	list-style: none;
+}
+
+.main_nav a{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.main_nav a:hover{
+	background-color: white;
+	color: darkgrey;
+}
+
+.sideMenu{
+	display: none;
+	cursor: pointer;
+}
+
+.sideMenu div{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin:5px;
+} 
+
+@media screen and (max-width: 1024px){
+	.main_nav {
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	body{
+		overflow-x: hidden;
+	}
+
+	.main_nav{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.main_nav li{
+		opacity: 0;
+	}
+
+	.sideMenu{
+		display: block;
+	}
+
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translateX(50px);
+	}
+	to{ 
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+
+______________________________
+
+body{
+	background-color: grey;
+	box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main_nav{
+	display: flex;
+	justify-content: space-around;
+	padding-left:500px;
+}
+
+.main_nav li{
+	list-style: none;
+}
+
+.main_nav a{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+@media screen and (max-width: 1024px){
+	.main_nav {
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+		padding-left:250px;
+	}
+}
+#comments {
+	border:none;
+	width: 100%;
+	height: 450px;
+	background-color: #323839 ;
+}
+
+#comment_right {
+	background-image: url(../Images/home1.jpg);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+	border:none;
+	width: 50%;
+	height: 450px;
+	background-color: #DBD9D2;
+	border-top-right-radius:30px;
+	border-bottom-right-radius: 30px;
+	position: absolute;
+}
+
+.com_content {
+	color: white;
+	margin: none;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+    text-align: justify;
+    font-style: monospace;
+    font-size: 30px;
+    border:none;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border:red 3px solid;
+    position: absolute;
+    top: 100%;
+  	left: 100%;
+    transform: translate(300%, 950%);
+    border:white 2px solid;
+    background-image: url(../Images/profile1.jpg);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+
+.com_content span{
+	position: absolute;
+    top: 50%;
+  	left: 50%;
+    transform: translate(0%, 3300%);
+}
+
+
+span:before {
+	content: '';
+	animation: animate infinite 20s;
+}
+
+@keyframes animate{
+	0%{
+		content: 'From hidden cultural gems in the city to sea-worn cliffs and rolling countryside, Cork can be the ideal place for the budget traveller';
+	}
+
+	20%{
+		content: 'b';
+	}
+
+	40%{
+		content: 'From hidden cultural gems in the city to sea-worn cliffs and rolling countryside, Cork can be the ideal place for the budget traveller';
+	}
+
+	60%{
+		content: 'd';
+	}
+
+	80%{
+		content: 'From hidden cultural gems in the city to sea-worn cliffs and rolling countryside, Cork can be the ideal place for the budget traveller';
+	}
+
+	100%{
+		content: 'f';
+	}
+}
+
+
+#footright{
+	list-style-type: none;
+
+	transform: translate(5vw,-120px);
+}
+
+#footright li{
+	color: white;
+	font-size: 1vw;
+	margin-left: 1vw;
+	padding-bottom: 0.5vw;
+	padding-top: none;
+}
+
+#footright li h4{
+	color: white;
+	font-size: 2vw;
+}

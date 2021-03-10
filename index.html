@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tourism Ireland | Home</title>
+	<link rel="stylesheet" type="text/css" href="ASSETS/CSS/site.css">
+	<meta name="tourism ireland" content="Website providing information to tourists visiting ireland using HTML5, CSS3 and JavaScript" >
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<!--Body start -->
+<body>
+
+	<!--Header start -->
+	<header>
+
+
+		<nav class="navbar">
+			<!--Navigation bar logo-->
+			<div class="nav_logo">
+				<h2>Tourism Ireland</h2>
+			</div>
+
+			<!--Drop down menu lines-->
+			<a href="#" class="drop_menu">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</a>
+
+			<!--Navigation bar links -->
+			<div class="main_nav">
+				<ul>
+					<li><a href="discover.html">Discover</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="event.html">Events</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+		</nav>
+
+	</header>
+	<!--Header end -->
+
+	
+
+	 <!--Main home page - Explore button to guide to the middle section of the page -->
+	<section id="homeImage">
+		<div id="homeTag"><a href="#homebottom"><h3>Explore</h3></a></div>
+
+		<!--Alert button-->
+		<button onclick="myFunction()" id="alert_button"><img src="ASSETS/Images/alert.png" alt="alret image" /></button>
+	</section>
+	
+
+	<!--Mid section of the home page - contains all the navigation links to the other pages-->
+	<section id="homebottom">
+		<div class="containers">
+			<a href="discover.html" class="container1"><h5 class="title_main">DISCOVER</h5></a>
+			<a href="gallery.html" class="container2"><h5 class="title_main">GALLERY</h5></a>
+			<a href="event.html" class="container3"><h5 class="title_main">EVENTS</h5></a>
+			<a href="contact.html" class="container4"><h5 class="title_main">CONTACT</h5></a>
+		</div>
+	</section>
+
+	<!--Mid section of the home page - contains all the navigation links to the other pages-->
+	<section id="vid_sec">
+		<video width="320" height="240" controls>
+		<source src="ASSETS/Video/video1.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		<h2>Your browser does not support the video tag.</h2>
+		</video>
+
+		<!--Embedded Code-->
+		<!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/crumlin-405375"><img id="weather" src="https://w.bookcdn.com/weather/picture/3_405375_1_1_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=11204"  alt="booked.net"/></a><!-- weather widget end -->
+	</section>
+
+	<!--Footer start -->
+	<footer>
+		<!--Footer content -->
+		<nav id="footnav">
+			<!-- Left footer - Contains navigation links to all pages-->
+			<ol id="footleft">
+				<li><h4>Explore</h4></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="discover.html">Discover</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ol>
+
+			<!--Middle footer - Contains navigation links to all the social media -->
+			<ol id="footmid">
+				<li><h4>Follow Us</h4></li>
+				<li class="line"><a href="https://www.facebook.com/Ireland/"><img id="facebook" alt="facebook icon" src="ASSETS/Images/facebook.png">@Ireland</a></li>
+				<li class="line"><a href="https://twitter.com/TourismIreland"><img id="twitter" alt="twitter icon" src="ASSETS/Images/twitter.png">@TourismIreland</a></li>
+				<li class="line"><a href="https://www.youtube.com/user/TIDublin2011/videos"><img id="youtube" alt="youtube icon" src="ASSETS/Images/youtube.png">Tourism Ireland</a></li>
+				<li class="line"><a href="https://www.instagram.com/tourismireland/?hl=en"><img id="insta" alt="instagram icon" src="ASSETS/Images/insta.png">@tourismireland</a></li>
+			</ol>
+
+			<!--Right footer - Contains contact details and coneects tot he contacts page-->
+			<ol id="footright">
+				<li><h4>Contact</h4></li>
+				<li><a href="contact.html">Dublin</a></li>
+				<li><a href="contact.html">+353 1 476 3400</a></li>
+				<li><a href="contact.html">Coleraine</a></li>
+				<li><a href="contact.html">+44 2870 359200</a></li>
+			</ol>
+		</nav>
+	</footer>
+	<!--Footer End -->
+
+	<script src="ASSETS/Script/site.js"></script>
+
+</body>
+<!--Body End -->
+
+
+</html>

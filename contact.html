@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tourism Ireland | Contact</title>
+	<link rel="stylesheet" type="text/css" href="ASSETS/CSS/site.css">
+	<meta name="tourism ireland" content="Website providing information to tourists visiting ireland using HTML5, CSS3 and JavaScript">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<!--Body start -->
+<body>
+
+	<!--Header start -->
+	<header>
+
+
+		<nav class="navbar">
+			<!--Navigation bar logo-->
+			<div class="nav_logo">
+				<h2>Tourism Ireland</h2>
+			</div>
+
+			<!--Drop down menu lines-->
+			<a href="#" class="drop_menu">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</a>
+
+			<!--Navigation bar links -->
+			<div class="main_nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="discover.html">Discover</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="event.html">Events</a></li>
+				</ul>
+			</div>
+
+		</nav>
+
+	</header>
+	<!--Header end -->
+
+
+	<!--Contact page buttons-->
+	<section id="contact_home">
+		<div id="pic1">
+			<!--Contact buttons leads to the contact section-->
+			<div class="homeTag"><a href="#homebottom"><h3>CONTACT</h3></a></div>
+		</div>
+		<div id="pic2">
+			<!--Reviw button leads to the review section-->
+			<div class="homeTag"><a href="#form_container"><h3>REVIEW</h3></a></div>
+		</div>
+	</section>
+
+	<!--Conatct Section-->
+	<section id="homebottom">
+		<h2>Contact</h2>
+
+		<!--Conatct content conatiner -->
+		<div class="contact_container">
+			<!--Dublin contact details-->
+			<ol class="container1">
+				<li><h4>DUBLIN</h4></li>
+				<li>4th Floor, Bishop's Square, Redmond's Hill, Dublin 2, DO2 TD99, Ireland</li>
+				<li>Send Dublin office an email</li>
+				<li>+353 1 476 3400</li>
+				<li>+353 1 476 3642</li>
+			</ol>
+
+			<!--Coleraine contact details-->
+			<ol class="container2">
+				<li><h4>COLERAINE</h4></li>
+				<li>Beresford House, 2 Beresford Road, Coleraine, Northern Ireland, BT52 1GE</li>
+				<li>Send Coleraine office an email</li>
+				<li>+44 2870 359200</li>
+				<li>+44 2870 326932</li>
+			</ol>
+		</div>
+	</section>
+
+	<!--Review section-->
+	<div id="form_container">
+		<h2>Review</h2>
+
+		<!--Review form start-->
+  		<form name="reviewForm" onsubmit="return (validate());">
+  			<!--Text input -->
+	    	<label for="email">Email</label>
+	    	<input type="text" id="email" name="email" placeholder="Your email..">
+
+	    	<!--radio boxes-->
+	    	<div id="radio_box">
+		    	<label>Events you have visited listed on this website:</label><br>
+				<input type="radio" id="place" name="placeNO" value="1">
+				<label for="place">2 places</label><br>
+				<input type="radio" id="place2" name="placeNO" value="2">
+				<label for="place2">4 places</label><br>
+				<input type="radio" id="place3" name="placeNO" value="3">
+				<label for="place3">6 places</label><br>
+				<input type="radio" id="place4" name="placeNO" value="4">
+				<label for="place4">More than 6 places</label>
+			</div>
+
+			<!--Check boxes -->
+			<div id="check_box">
+				<label>Places you have visited:</label><br>
+				<input type="checkbox" id="cliff" name="dest" value="Bike">
+				<label for="cliff"> Cliffs of moher</label><br>
+				<input type="checkbox" id="ring" name="dest" value="Car">
+				<label for="ring"> Ring of Kerry</label><br>
+				<input type="checkbox" id="kill" name="dest" value="Boat">
+				<label for="kill"> Killarney National Park</label><br>
+				<input type="checkbox" id="trini" name="dest" value="Boat">
+				<label for="trini"> Trinity College</label><br>
+				<input type="checkbox" id="Glen" name="dest" value="Boat">
+				<label for="Glen"> Glendalough</label><br>
+				<input type="checkbox" id="ding" name="dest" value="Boat">
+				<label for="ding"> The Dingle Pninsula</label><br><br>
+			</div>
+
+			<!--Drop down selector -->
+	    	<label for="rating">Rating</label>
+	    	<select id="rating" name="rating">
+	    	<option value="">...</option>
+	      	<option value="1">1 Star</option>
+	      	<option value="2">2 Star</option>
+	      	<option value="3">3 Star</option>
+	      	<option value="4">4 Star</option>
+	      	<option value="5">5 Star</option>
+	    	</select>
+
+	    	<!--Text box-->
+	    	<label for="subject">Sugest changes to our website</label>
+	    	<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+	    	<!--Dubmit button-->
+	    	<input type="submit" value="Submit">
+  		</form>
+	</div>
+
+		<!--Footer start -->
+	<footer>
+		<!--Footer content -->
+		<nav id="footnav">
+			<!-- Left footer - Contains navigation links to all pages-->
+			<ol id="footleft">
+				<li><h4>Explore</h4></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="discover.html">Discover</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ol>
+
+			<!--Middle footer - Contains navigation links to all the social media -->
+			<ol id="footmid">
+				<li><h4>Follow Us</h4></li>
+				<li class="line"><a href="https://www.facebook.com/Ireland/"><img id="facebook" alt="facebook icon" src="ASSETS/Images/facebook.png">@Ireland</a></li>
+				<li class="line"><a href="https://twitter.com/TourismIreland"><img id="twitter" alt="twitter icon" src="ASSETS/Images/twitter.png">@TourismIreland</a></li>
+				<li class="line"><a href="https://www.youtube.com/user/TIDublin2011/videos"><img id="youtube" alt="youtube icon" src="ASSETS/Images/youtube.png">Tourism Ireland</a></li>
+				<li class="line"><a href="https://www.instagram.com/tourismireland/?hl=en"><img id="insta" alt="instagram icon" src="ASSETS/Images/insta.png">@tourismireland</a></li>
+			</ol>
+
+			<!--Right footer - Contains contact details and coneects tot he contacts page-->
+			<ol id="footright">
+				<li><h4>Contact</h4></li>
+				<li><a href="contact.html">Dublin</a></li>
+				<li><a href="contact.html">+353 1 476 3400</a></li>
+				<li><a href="contact.html">Coleraine</a></li>
+				<li><a href="contact.html">+44 2870 359200</a></li>
+			</ol>
+		</nav>
+	</footer>
+	<!--Footer End -->
+	<script src="ASSETS/Script/site.js"></script>
+</body>
+<!--Body end-->
+
+
+
+</html>
